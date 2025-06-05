@@ -1,6 +1,7 @@
 import React from 'react'
 import  "./Hero.css"
 import {HiLocationMarker} from  'react-icons/hi'
+import CountUp from 'react-countup';
 
 const Hero = () => {
   return (
@@ -8,7 +9,6 @@ const Hero = () => {
       <div className="paddings innerWidth flexCenter hero-container">
         {/*left*/}
         <div className="flexColStart hero-left">
-
             <div className="hero-title">
                 <div className="orange-circle"/>
                 <h1>Discover<br/>Most Suitable<br/>Property</h1>
@@ -26,7 +26,14 @@ const Hero = () => {
             </div>
 
             <div className="flexCenter stats">
-              
+              <div className="flexColStart stat">
+                <span>
+                  <CountUp />
+                </span>
+                <span>
+                  premium products
+                </span>
+              </div>
             </div>
         </div>
 
