@@ -7,11 +7,13 @@ const Header = () => {
         <img src="./kenya-nannies logo3.png" alt="logo" width={100} />
 
         <div className="h-menu">
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <a href=""> Home</a>
+          <a href="">Our Value</a>
+          <a href="">Contact Us</a>
+          <a href="">Get Started</a>
+          <button className="button">
+            <a href="">Contact</a>
+          </button>
         </div>
       </div>
     </section>
