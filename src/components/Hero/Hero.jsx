@@ -37,7 +37,7 @@ const Hero = () => {
                 <CountUp start={8000} end={10000} duration={6} />
                 <span>+</span>
               </span>
-              <span>premium products</span>
+              <span className="secondaryText">premium products</span>
             </div>
 
             <div className="flexColStart stat">
@@ -45,15 +45,15 @@ const Hero = () => {
                 <CountUp start={1900} end={2000} duration={6} />
                 <span>+</span>
               </span>
-              <span>Happy Customers</span>
+              <span className="secondaryText">Happy Customers</span>
             </div>
 
             <div className="flexColStart stat">
               <span>
-                <CountUp end={28}/>
+                <CountUp end={28} />
                 <span>+</span>
               </span>
-              <span>Award Winnings</span>
+              <span className="secondaryText">Award Winnings</span>
             </div>
           </div>
         </div>
