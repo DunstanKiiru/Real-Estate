@@ -28,7 +28,8 @@ const Hero = () => {
             <div className="flexCenter stats">
               <div className="flexColStart stat">
                 <span>
-                  <CountUp />
+                  <CountUp start={8000} end={10000} duration={6} />
+                  <span>+</span>
                 </span>
                 <span>
                   premium products
