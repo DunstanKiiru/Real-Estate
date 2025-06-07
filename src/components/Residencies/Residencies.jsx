@@ -1,8 +1,8 @@
-import React from 'react'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
-import "swiper/css"
-import './Residencies.css'
-import data from '../../utils/slider.json'
+import React from "react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import "./Residencies.css";
+import data from "../../utils/slider.json";
 
 const Residencies = () => {
   return (
@@ -20,27 +20,41 @@ const Residencies = () => {
                 <img src={card.image} alt="home" />
 
                 <div className="r-price">
-                  <span style={{ color: "orange", fontWeight: "bold", fontSize: "0.9rem" }}>$</span>
-                  <span style={{ fontWeight: "bold", fontSize: "0.9rem" }}>{card.price}</span>
+                  <span
+                    style={{
+                      color: "orange",
+                      fontWeight: "bold",
+                      fontSize: "0.9rem",
+                    }}
+                  >
+                    $
+                  </span>
+                  <span style={{ fontWeight: "bold", fontSize: "0.9rem" }}>
+                    {card.price}
+                  </span>
                 </div>
 
                 <span className="primaryText r-name">{card.name}</span>
-                <div className="secondaryText r-detail">
-                  {card.detail.split(/,|\\./).map((line, idx) => (
-                    <span key={idx}>
-                      {line.trim()}
-                      {idx === 0 ? <br /> : null}
-                    </span>
-                  ))}
-                </div>
+
+                <span
+                  className="secondaryText r-detail"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {card.detail}
+                </span>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );
-}
+};
 
-export default Residencies
+export default Residencies;
