@@ -38,16 +38,16 @@ const Value = () => {
           >
             {data.map((item, i) => {
               return (
-                <AccordionItem
-                  className={`accordionItem`}
-                  key={i}
-                  uuid={i}
-                >
+                <AccordionItem className={`accordionItem`} key={i} uuid={i}>
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordionButton">
                       <AccordionItemState>
                         {({ expanded }) => (
-                          <div className={`flexCenter icon ${expanded ? "expanded" : "collapsed"}`}>
+                          <div
+                            className={`flexCenter icon ${
+                              expanded ? "expanded" : "collapsed"
+                            }`}
+                          >
                             <div className="flexCenter icon">{item.icon}</div>
                             <span className="primaryText">{item.heading}</span>
                             <div className="flexCenter icon">
