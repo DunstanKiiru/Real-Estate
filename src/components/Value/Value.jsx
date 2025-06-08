@@ -29,9 +29,29 @@ const Value = () => {
                 We believe a good place to live can make your life better.
                 </span>
 
-                <Accordion allowMultipleExpanded = {false} preExpanded={[0]}>
+                <Accordion className='accordion' allowMultipleExpanded = {false} 
+                preExpanded={[0]}
+                >
                     {
-                        data.map((data))
+                        data.map((item, i)=>{
+                            return(
+                                <AccordionItem className='accordionItem' key={i} uuid={i}>
+                                    <AccordionItemHeading>
+                                        <AccordionItemButton>
+                                            <div className="flexCenter icon">
+                                                {item.icon}
+                                            </div>
+                                            <span className="primaryText">
+                                                {item.heading}
+                                            </span>
+                                            <div className='flexCenter icon'>
+                                                <MdOutlineArrowDropDown size={20} />
+                                            </div>
+                                        </AccordionItemButton>
+                                    </AccordionItemHeading>
+                                </AccordionItem>
+                            )
+                        })
                     }
 
                 </Accordion>
