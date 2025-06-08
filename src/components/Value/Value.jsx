@@ -9,6 +9,7 @@ import{
 import 'react-accessible-accordion/dist/fancy-example.css';
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 import './Value.css'
+import data from '../../utils/accordion'
 const Value = () => {
   return (
     <section className="v-wrapper">
@@ -27,6 +28,13 @@ const Value = () => {
                 <br />
                 We believe a good place to live can make your life better.
                 </span>
+
+                <Accordion allowMultipleExpanded = {false} preExpanded={[0]}>
+                    {
+                        data.map((data))
+                    }
+
+                </Accordion>
             </div>
         </div>
     </section>
