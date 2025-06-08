@@ -31,7 +31,22 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flexCenter button">CallNow</div>
+                <div className="flexCenter button">Call now</div>
+              </div>
+
+              {/*second row*/}
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <BsFillChatDotsFill size={25} />
+                  </div>
+                  <div className="flexColStart detail">
+                    <span className="primaryText">Chat</span>
+                    <span className="secondaryText">0720206198</span>
+                  </div>
+                </div>
+
+                <div className="flexCenter button">Chat now</div>
               </div>
             </div>
           </div>
