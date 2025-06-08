@@ -13,3 +13,17 @@
 .c-left{
     gap: 0.5rem;
 }
+
+.contactModes{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.contactModes .row{
+    gap: 1.5rem;
+}
+
+.mode{
+    width: 16rem;
+    padding: 1rem;
+}
