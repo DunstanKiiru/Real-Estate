@@ -20,5 +20,9 @@
     margin-bottom: 20px;
 }
 .accordionButton{
-    
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
 }
