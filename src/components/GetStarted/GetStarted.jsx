@@ -12,7 +12,7 @@ const GetStarted = () => {
             residence soon
           </span>
           <button className="button">
-            <a href="mailto:"></a>
+            <a href="mailto:alexdkiiru@gmail.com">Get Started</a>
           </button>
         </div>
       </div>
