@@ -38,7 +38,7 @@ const Value = () => {
                             return(
                                 <AccordionItem className='accordionItem' key={i} uuid={i}>
                                     <AccordionItemHeading>
-                                        <AccordionItemButton>
+                                        <AccordionItemButton className='accordionButton'>
                                             <div className="flexCenter icon">
                                                 {item.icon}
                                             </div>
